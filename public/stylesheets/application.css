@@ -29,7 +29,14 @@ body, p, ol, ul, td {
 .odd {background-color:#f6f7f8;}
 .even {background-color: #fff;}
 
+tr {
+    height: 2.0em;
+}
 
+table {
+    width: 100%;
+    width: 450px;
+}
 
 
 

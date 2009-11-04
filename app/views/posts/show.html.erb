@@ -1,11 +1,11 @@
 <p>
-  <%= link_to "ALL POSTS", :controller => "Posts", :action => "index" %> >> <b><%=h @post.body %></b>
+  <%= link_to "HOME", :controller => "Posts", :action => "index" %> >> <b><%=h @post.body %></b>
 </p>
 
 <table>
   <% @post.responses.each do |response| %>
-    <%  cycle('odd','even') %>
-    <tr><td><%= ">> " + response.body%></td></tr>
+    <%   %>
+    <tr class="<%=cycle('odd','even')%>"><td><%= ">> " + response.body%></td></tr>
   <% end %>
 </table><br/>
 
