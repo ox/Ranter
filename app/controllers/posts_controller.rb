@@ -50,7 +50,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         flash[:notice] = 'Post was successfully created.'
-        format.html { redirect_to(@post) }
+        format.html { redirect_to(root_url) }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
         format.html { render :action => "new" }
@@ -101,16 +101,16 @@ class PostsController < ApplicationController
     if request.post?
       if params[:answer][:lol] == "dapopo"
         session[:admin] = true
-        redirect_to :controller => "Posts"
+        redirect_to :controller => "Posts", :action => "index"
       else
-        redirect_to :controller => "Posts"
+        redirect_to :controller => "Posts", :action => "index"
       end
     end
   end
 
   def logout
     session[:admin] = false
-    redirect_to :controller => "Posts"
+    redirect_to :controller => "Posts", :action => "index"
   end
 
 

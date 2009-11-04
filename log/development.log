@@ -6509,3 +6509,39 @@ Rendering posts/index
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
 Rendered posts/_form (1.9ms)
 Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 16:58:03) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (36.3ms)
+Completed in 200ms (View: 159, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-04 16:58:11) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"lol, sike!"}, "authenticity_token"=>"NzFae1W3drNs4927A2REgwPt8lr35n23UeMpjpneFJA="}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("created_at", "body", "updated_at") VALUES('2009-11-04 21:58:11', 'lol, sike!', '2009-11-04 21:58:11')[0m
+Redirected to http://localhost:3001/
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 16:58:11) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 7) [0m
+Rendered posts/_form (2.0ms)
+Completed in 75ms (View: 68, DB: 2) | 200 OK [http://localhost/]
