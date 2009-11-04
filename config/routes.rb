@@ -38,8 +38,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'new', :controller => "Posts", :action => 'new'
   map.connect 'list', :controller => "Posts", :action => "list"
-  map.connect 'login', :controller => "Welcome", :action => "login"
-  map.connect 'logout', :controller => "Welcome", :action => "logout"
+  map.connect 'login', :controller => "Posts", :action => "login"
+  map.connect 'logout', :controller => "Posts", :action => "logout"
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "Posts"

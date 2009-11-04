@@ -6,7 +6,12 @@
 <table>
 <% @posts.each do |post| %>
   <% cycle('odd', 'even') %>
-  <tr><td><%= post.body[0..50] + " (" + post.responses.size.to_s + ")" %></td><td><%= link_to "show", :controller => "Posts", :action => "show", :id => post.id %></td></tr>
+  <tr><td><%= post.body[0..50] + " (" + post.responses.size.to_s + ")" %></td><td><%= link_to "show", :controller => "Posts", :action => "show", :id => post.id %></td>
+    <% if admin? %>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
 <% end %>
 
 </table>
