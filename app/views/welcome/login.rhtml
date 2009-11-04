@@ -1,0 +1,5 @@
+<% form_for :answer, :controller => "Welcome", :action => "login", :method => :post do |f| %>
+  <label for="lol">Login:</label><br/>
+  <%= f.password_field "lol" %><br><br>
+  <%= submit_tag "SUBMIT" %>
+<% end  %>

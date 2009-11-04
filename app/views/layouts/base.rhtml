@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Ranter</title>
+  <%= stylesheet_link_tag 'application' %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= link_to "HOME", root_url %>
+<div id="container">
+
+  <%= yield %>
+
+  <span style="float:right;margin-top:300px;" class="h5"><% if admin? %>Admin<%end%><div id="logo"></div></span>
+
+</div>
+
+</body>
+</html>

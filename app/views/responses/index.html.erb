@@ -1,0 +1,24 @@
+<h1>Latest responses</h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th>In Response To</th>
+  </tr>
+
+<% @responses.each do |response| %>
+  <tr>
+    <td><%=h response.body %></td>
+    <td><%=h Post.find(response.post_id).body%></td>
+    <% if admin? %>
+    <td><%= link_to 'Show', response %></td>
+    <td><%= link_to 'Edit', edit_response_path(response) %></td>
+    <td><%= link_to 'Destroy', response, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%#= link_to 'New response', new_response_path %>

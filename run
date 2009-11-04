@@ -1,0 +1,4 @@
+#!/bin/bash
+
+unicorn_rails --port 3001
+
