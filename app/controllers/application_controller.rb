@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     if session[:admin] == true
       return true
     else
-      redirect_to :controller => "Welcome"
+      redirect_to :controller => "Posts"
       return false
     end
   end

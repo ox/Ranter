@@ -6119,3 +6119,393 @@ Rendering welcome/index
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
 Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-03 23:18:32) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering welcome/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Completed in 132ms (View: 98, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-03 23:18:34) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering welcome/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-03 23:18:53) [GET]
+  [4;36;1mPost Load (55.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering welcome/index
+ERROR: compiling _run_erb_app47views47welcome47index46html46erb RAISED compile error
+/Users/Artem/Code/Web/Rails/Ranter/app/views/welcome/index.html.erb:13: syntax error, unexpected tASSOC, expecting '}'
+...oncat(( render {:controller => "Posts", :action => "new"} )....
+                              ^
+/Users/Artem/Code/Web/Rails/Ranter/app/views/welcome/index.html.erb:13: syntax error, unexpected ',', expecting '}'
+...ender {:controller => "Posts", :action => "new"} ).to_s); @o...
+                              ^
+Function body:           def _run_erb_app47views47welcome47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Ranter</h1>\n<p>Hey! The point of Ranter is to just talk about what ever you want, anonymously! No emails or usernames.</p><br/><br/>\n\n<h3>//Threads//</h3>\n<table>\n"
+
+
+
+
+;  @posts.each do |post| ; @output_buffer.concat "\n  "
+;  cycle('odd', 'even') ; @output_buffer.concat "\n  <tr><td>"
+; @output_buffer.concat(( post.body[0..50] + " (" + post.responses.size.to_s + ")" ).to_s); @output_buffer.concat "</td><td>"; @output_buffer.concat(( link_to "show", :controller => "Posts", :action => "show", :id => post.id ).to_s); @output_buffer.concat "</td></tr>\n"
+;  end ; @output_buffer.concat "\n\n</table><br/>\n\n"
+
+
+
+; @output_buffer.concat(( render {:controller => "Posts", :action => "new"} ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Artem/Code/Web/Rails/Ranter/app/views/welcome/index.html.erb:17:in `compile!'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Artem/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Artem/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Artem/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Artem/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/Artem/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/Artem/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/Artem/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:517:in `process_client'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:602:in `worker_loop'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:600:in `each'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:600:in `worker_loop'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:501:in `spawn_missing_workers'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:501:in `fork'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:501:in `spawn_missing_workers'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:490:in `each'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:490:in `spawn_missing_workers'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:507:in `maintain_worker_count'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:171:in `start'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/lib/unicorn.rb:20:in `run'
+/Library/Ruby/Gems/1.8/gems/unicorn-0.93.3/bin/unicorn_rails:208
+/usr/bin/unicorn_rails:19:in `load'
+/usr/bin/unicorn_rails:19
+
+ActionView::TemplateError (compile error
+/Users/Artem/Code/Web/Rails/Ranter/app/views/welcome/index.html.erb:13: syntax error, unexpected tASSOC, expecting '}'
+...oncat(( render {:controller => "Posts", :action => "new"} )....
+                              ^
+/Users/Artem/Code/Web/Rails/Ranter/app/views/welcome/index.html.erb:13: syntax error, unexpected ',', expecting '}'
+...ender {:controller => "Posts", :action => "new"} ).to_s); @o...
+                              ^) on line #13 of app/views/welcome/index.html.erb:
+10: 
+11: </table><br/>
+12: 
+13: <%= render {:controller => "Posts", :action => "new"} %>
+
+    app/views/welcome/index.html.erb:17:in `compile!'
+    unicorn (0.93.3) lib/unicorn.rb:517:in `process_client'
+    unicorn (0.93.3) lib/unicorn.rb:602:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `fork'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:507:in `maintain_worker_count'
+    unicorn (0.93.3) lib/unicorn.rb:171:in `start'
+    unicorn (0.93.3) lib/unicorn.rb:20:in `run'
+    unicorn (0.93.3) bin/unicorn_rails:208
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-03 23:19:48) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering welcome/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Completed in 17ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-04 15:28:05) [GET]
+
+NameError (uninitialized constant WelcomeController):
+  unicorn (0.93.3) lib/unicorn.rb:517:in `process_client'
+  unicorn (0.93.3) lib/unicorn.rb:602:in `worker_loop'
+  unicorn (0.93.3) lib/unicorn.rb:600:in `each'
+  unicorn (0.93.3) lib/unicorn.rb:600:in `worker_loop'
+  unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+  unicorn (0.93.3) lib/unicorn.rb:501:in `fork'
+  unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+  unicorn (0.93.3) lib/unicorn.rb:490:in `each'
+  unicorn (0.93.3) lib/unicorn.rb:490:in `spawn_missing_workers'
+  unicorn (0.93.3) lib/unicorn.rb:507:in `maintain_worker_count'
+  unicorn (0.93.3) lib/unicorn.rb:171:in `start'
+  unicorn (0.93.3) lib/unicorn.rb:20:in `run'
+  unicorn (0.93.3) bin/unicorn_rails:208
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (88.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:28:19) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/posts/_form.rhtml:
+1: <% form_for(@post) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/posts/_form.rhtml:1:in `_run_rhtml_app47views47posts47_form46rhtml_locals_form_object'
+    app/views/posts/index.html.erb:13
+    unicorn (0.93.3) lib/unicorn.rb:517:in `process_client'
+    unicorn (0.93.3) lib/unicorn.rb:602:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `fork'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:507:in `maintain_worker_count'
+    unicorn (0.93.3) lib/unicorn.rb:171:in `start'
+    unicorn (0.93.3) lib/unicorn.rb:20:in `run'
+    unicorn (0.93.3) bin/unicorn_rails:208
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (107.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:29:15) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/posts/_form.rhtml:
+1: <% form_for(@post) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/posts/_form.rhtml:1:in `_run_rhtml_app47views47posts47_form46rhtml_locals_form_object'
+    app/views/posts/index.html.erb:13
+    unicorn (0.93.3) lib/unicorn.rb:517:in `process_client'
+    unicorn (0.93.3) lib/unicorn.rb:602:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:600:in `worker_loop'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `fork'
+    unicorn (0.93.3) lib/unicorn.rb:501:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `each'
+    unicorn (0.93.3) lib/unicorn.rb:490:in `spawn_missing_workers'
+    unicorn (0.93.3) lib/unicorn.rb:507:in `maintain_worker_count'
+    unicorn (0.93.3) lib/unicorn.rb:171:in `start'
+    unicorn (0.93.3) lib/unicorn.rb:20:in `run'
+    unicorn (0.93.3) bin/unicorn_rails:208
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:29:52) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.1ms)
+Completed in 99ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:30:12) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.5ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:30:29) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.5ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:30:47) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (3.3ms)
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:32:27) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.0ms)
+Completed in 79ms (View: 73, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:33:09) [GET]
+  [4;35;1mPost Load (1.4ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.4ms)
+Completed in 25ms (View: 17, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:33:11) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.9ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 15:33:23) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.9ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/]
