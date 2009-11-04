@@ -6722,3 +6722,49 @@ Rendering posts/index
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
 Rendered posts/_form (1.6ms)
 Completed in 33ms (View: 27, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 17:32:12) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.2ms)
+Completed in 66ms (View: 53, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-04 17:32:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering posts/show
+  [4;36;1mResponse Load (0.5ms)[0m   [0;1mSELECT * FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 76ms (View: 67, DB: 1) | 200 OK [http://localhost/posts/show/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-04 17:32:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering posts/show
+  [4;36;1mResponse Load (0.5ms)[0m   [0;1mSELECT * FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/posts/show/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-04 17:32:31) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.9ms)
+Completed in 34ms (View: 27, DB: 2) | 200 OK [http://localhost/]
