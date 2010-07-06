@@ -6,10 +6,13 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.find(:all, :order => :updated_at)
+    @post = Post.new(params[:post])
+
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
+      format.json { render :json => @posts }
     end
   end
 
@@ -23,6 +26,16 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @post }
+      format.json { render :json => @post }
+    end
+  end
+
+  def list
+    @posts = Post.find(:all, :order => :updated_at)
+
+    respond_to do |format|
+      format.xml  { render :xml => @posts}
+      format.json { render :json => @posts}
     end
   end
 
@@ -34,6 +47,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
+      format.json { render :json => @post }
     end
   end
 
@@ -52,9 +66,11 @@ class PostsController < ApplicationController
         flash[:notice] = 'Post was successfully created.'
         format.html { redirect_to(root_url) }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
+        format.json  { render :json => @post, :status => :created, :location => @post }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @post.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -69,9 +85,11 @@ class PostsController < ApplicationController
         flash[:notice] = 'Post was successfully updated.'
         format.html { redirect_to(@post) }
         format.xml  { head :ok }
+        format.json { head :ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @post.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -84,17 +102,14 @@ class PostsController < ApplicationController
 
       @post.responses.create(params[:response])
 
-      if @post.responses.last.save
-        Post.find(id).touch
-        flash[:notice] = "response posted!"
-        redirect_to :controller => "Posts", :action => "view", :id => @response.post_id
+      respond_to do |format|
+        if @post.responses.last.save
+          Post.find(id).touch
+          flash[:notice] = "response posted!"
+          redirect_to :controller => "Posts", :action => "view", :id => @response.post_id
+        end
       end
     end
-  end
-
-  def index
-    @posts = Post.find(:all)
-    @post = Post.new(params[:post])
   end
 
   def login
@@ -126,6 +141,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(posts_url) }
       format.xml  { head :ok }
+      format.json { head :ok }
     end
   end
 end

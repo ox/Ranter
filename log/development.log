@@ -7242,3 +7242,1356 @@ Rendering template within layouts/base
 Rendering posts/show
   [4;36;1mResponse Load (0.4ms)[0m   [0;1mSELECT * FROM "responses" WHERE ("responses".post_id = 1) [0m
 Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/posts/show/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 03:04:59) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (29.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 03:05:03) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 03:05:59) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 03:08:53) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 03:16:29) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (72.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.6ms)
+Completed in 115ms (View: 36, DB: 74) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index to json (for 127.0.0.1 at 2009-12-21 03:18:09) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 03:18:15) [GET]
+  Parameters: {"id"=>"json"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=json):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (89.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 03:19:07) [GET]
+  Parameters: {"id"=>"json"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=json):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 03:19:17) [GET]
+  Parameters: {"id"=>"json"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=json):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index to json (for 127.0.0.1 at 2009-12-21 14:09:47) [GET]
+  [4;36;1mPost Load (1.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:09:58) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:10:38) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (2.3ms)
+Completed in 34ms (View: 27, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-21 14:10:43) [GET]
+
+ActionController::RoutingError (No route matches "/json" with {:method=>:get}):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-21 14:10:59) [GET]
+
+ActionController::RoutingError (No route matches "/post/show/1.json" with {:method=>:get}):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:11:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Completed in 140ms (View: 131, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:11:22) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=show):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:11:27) [GET]
+  Parameters: {"id"=>"welcome"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=welcome):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:11:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:12:47) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:13:04) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:13:10) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.8ms)
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 14:13:33) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 14:13:40) [GET]
+  Parameters: {"id"=>"all"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=all):
+  app/controllers/posts_controller.rb:20:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:13:44) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (65.9ms)
+Completed in 81ms (View: 74, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:16:26) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:16:31) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.7ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:16:33) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+Rendered posts/_form (1.9ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-12-21 14:16:40) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"STUPID WHORE!"}, "authenticity_token"=>"sS5djyVf07IPKGUTc2iSMbtzkV8fE9w8idfnHbp/DMs="}
+  [4;36;1mPost Create (79.1ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "body", "updated_at") VALUES('2009-12-21 19:16:40', 'STUPID WHORE!', '2009-12-21 19:16:40')[0m
+Redirected to http://localhost:3001/
+Completed in 91ms (DB: 79) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:16:40) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+Rendered posts/_form (1.7ms)
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 14:16:42) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+Rendering template within layouts/base
+Rendering posts/show
+  [4;36;1mResponse Load (0.3ms)[0m   [0;1mSELECT * FROM "responses" WHERE ("responses".post_id = 8) [0m
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/posts/show/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:16:45) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+Rendered posts/_form (1.8ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PostsController#login (for 127.0.0.1 at 2009-12-21 14:16:48) [GET]
+Rendering template within layouts/base
+Rendering posts/login
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing PostsController#login (for 127.0.0.1 at 2009-12-21 14:16:50) [POST]
+  Parameters: {"commit"=>"SUBMIT", "authenticity_token"=>"sS5djyVf07IPKGUTc2iSMbtzkV8fE9w8idfnHbp/DMs=", "answer"=>{"lol"=>"dapopo"}}
+Redirected to http://localhost:3001/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/login]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:16:50) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+Rendered posts/_form (1.6ms)
+Completed in 96ms (View: 30, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-21 14:18:03) [GET]
+
+ActionController::RoutingError (No route matches "/index.json" with {:method=>:get}):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:16) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:20) [GET]
+  Parameters: {"id"=>"list"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=list):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (92.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Completed in 389ms (View: 382, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/show/2.json]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 14:18:41) [GET]
+  Parameters: {"id"=>"json"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=json):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:44) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=show):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (90.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:18:48) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:20:36) [GET]
+  Parameters: {"id"=>"list"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=list):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (93.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:21:18) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=index):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:21:21) [GET]
+  Parameters: {"id"=>"list"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=list):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (89.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#list to json (for 127.0.0.1 at 2009-12-21 14:22:28) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/posts/list/json]
+
+
+Processing PostsController#list to json (for 127.0.0.1 at 2009-12-21 14:22:54) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts/list/json]
+
+
+Processing PostsController#list to xml (for 127.0.0.1 at 2009-12-21 14:23:00) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 5ms (View: 1, DB: 1) | 406 Not Acceptable [http://localhost/posts/list/xml]
+
+
+Processing PostsController#list to xml (for 127.0.0.1 at 2009-12-21 14:23:05) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 65ms (View: 60, DB: 1) | 406 Not Acceptable [http://localhost/posts/list/xml]
+
+
+Processing PostsController#index to xml (for 127.0.0.1 at 2009-12-21 14:23:12) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/posts/index/xml]
+
+
+Processing PostsController#index to xml (for 127.0.0.1 at 2009-12-21 14:25:58) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/posts/index/xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-21 14:27:50) [GET]
+
+ActionController::RoutingError (No route matches "/posts/show/1/json" with {:method=>:get}):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:27:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:28:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:28:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing ApplicationController#show to json (for 127.0.0.1 at 2009-12-21 14:28:34) [GET]
+  Parameters: {"id"=>"1"}
+
+SyntaxError (/Users/Artem/Code/Web/Rails/Ranter/app/controllers/posts_controller.rb:29: syntax error, unexpected '}', expecting tASSOC
+/Users/Artem/Code/Web/Rails/Ranter/app/controllers/posts_controller.rb:145: syntax error, unexpected kEND, expecting '}'):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (84.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show to json (for 127.0.0.1 at 2009-12-21 14:28:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/posts/show/1.json]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-12-21 14:34:19) [GET]
+  Parameters: {"id"=>"create"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=create):
+  app/controllers/posts_controller.rb:22:in `show'
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (28.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#create to json (for 127.0.0.1 at 2009-12-21 14:34:26) [GET]
+  [4;36;1mPost Create (75.2ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "body", "updated_at") VALUES('2009-12-21 19:34:26', NULL, '2009-12-21 19:34:26')[0m
+Completed in 90ms (View: 3, DB: 75) | 201 Created [http://localhost/posts/create/json]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:34:38) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #8 of app/views/posts/index.html.erb:
+5: <h3>//Threads//</h3>
+6: <table>
+7: <% @posts.each do |post| %>
+8:   <tr class="<%= cycle('odd', 'even')%>" ><td><%=link_to post.body[0..50] + " (" + post.responses.size.to_s + ")",  :action => "show", :id => post.id %></td>
+9:     <% if admin? %>
+10:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+11:     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/posts/index.html.erb:8
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    app/controllers/posts_controller.rb:12:in `index'
+    unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+    unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+    unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+    unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+    unicorn (0.95.2) bin/unicorn_rails:207
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#create to json (for 127.0.0.1 at 2009-12-21 14:35:06) [GET]
+  [4;35;1mPost Create (0.6ms)[0m   [0mINSERT INTO "posts" ("created_at", "body", "updated_at") VALUES('2009-12-21 19:35:06', NULL, '2009-12-21 19:35:06')[0m
+Completed in 12ms (View: 2, DB: 1) | 201 Created [http://localhost/posts/create/json]
+
+
+Processing PostsController#destroy to 9 (for 127.0.0.1 at 2009-12-21 14:35:25) [GET]
+Redirected to http://localhost:3001/
+Filter chain halted as [:require_admin] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/posts/destroy/9]
+
+
+Processing PostsController#9 to destory (for 127.0.0.1 at 2009-12-21 14:35:34) [GET]
+
+ActionController::UnknownAction (No action responded to 9. Actions: create, destroy, edit, index, list, login, logout, new, require_admin, respond, show, and update):
+  unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+  unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+  unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+  unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+  unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+  unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+  unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+  unicorn (0.95.2) bin/unicorn_rails:207
+  /usr/bin/unicorn_rails:19:in `load'
+  /usr/bin/unicorn_rails:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#destroy to 9 (for 127.0.0.1 at 2009-12-21 14:35:46) [GET]
+Redirected to http://localhost:3001/
+Filter chain halted as [:require_admin] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/posts/destroy/9]
+
+
+Processing PostsController#destroy to 10 (for 127.0.0.1 at 2009-12-21 14:35:49) [GET]
+Redirected to http://localhost:3001/
+Filter chain halted as [:require_admin] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/posts/destroy/10]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:35:54) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #8 of app/views/posts/index.html.erb:
+5: <h3>//Threads//</h3>
+6: <table>
+7: <% @posts.each do |post| %>
+8:   <tr class="<%= cycle('odd', 'even')%>" ><td><%=link_to post.body[0..50] + " (" + post.responses.size.to_s + ")",  :action => "show", :id => post.id %></td>
+9:     <% if admin? %>
+10:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+11:     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/posts/index.html.erb:8
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    app/controllers/posts_controller.rb:12:in `index'
+    unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+    unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+    unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+    unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+    unicorn (0.95.2) bin/unicorn_rails:207
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:35:55) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #8 of app/views/posts/index.html.erb:
+5: <h3>//Threads//</h3>
+6: <table>
+7: <% @posts.each do |post| %>
+8:   <tr class="<%= cycle('odd', 'even')%>" ><td><%=link_to post.body[0..50] + " (" + post.responses.size.to_s + ")",  :action => "show", :id => post.id %></td>
+9:     <% if admin? %>
+10:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+11:     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/posts/index.html.erb:8
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    app/controllers/posts_controller.rb:12:in `index'
+    unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+    unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+    unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+    unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+    unicorn (0.95.2) bin/unicorn_rails:207
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:35:56) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #8 of app/views/posts/index.html.erb:
+5: <h3>//Threads//</h3>
+6: <table>
+7: <% @posts.each do |post| %>
+8:   <tr class="<%= cycle('odd', 'even')%>" ><td><%=link_to post.body[0..50] + " (" + post.responses.size.to_s + ")",  :action => "show", :id => post.id %></td>
+9:     <% if admin? %>
+10:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+11:     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/posts/index.html.erb:8
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    app/controllers/posts_controller.rb:12:in `index'
+    unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+    unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+    unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+    unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+    unicorn (0.95.2) bin/unicorn_rails:207
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#list to json (for 127.0.0.1 at 2009-12-21 14:36:04) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/posts/list/json]
+
+
+Processing PostsController#list to xml (for 127.0.0.1 at 2009-12-21 14:36:08) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" ORDER BY updated_at[0m
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/posts/list/xml]
+
+
+Processing PostsController#login (for 127.0.0.1 at 2009-12-21 14:36:34) [GET]
+Rendering template within layouts/base
+Rendering posts/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-12-21 14:36:48) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY updated_at[0m
+Rendering template within layouts/base
+Rendering posts/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 6) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "responses" WHERE ("responses".post_id = 8) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #8 of app/views/posts/index.html.erb:
+5: <h3>//Threads//</h3>
+6: <table>
+7: <% @posts.each do |post| %>
+8:   <tr class="<%= cycle('odd', 'even')%>" ><td><%=link_to post.body[0..50] + " (" + post.responses.size.to_s + ")",  :action => "show", :id => post.id %></td>
+9:     <% if admin? %>
+10:     <td><%= link_to 'Edit', edit_post_path(post) %></td>
+11:     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/posts/index.html.erb:8
+    app/views/posts/index.html.erb:7:in `each'
+    app/views/posts/index.html.erb:7
+    app/controllers/posts_controller.rb:12:in `index'
+    unicorn (0.95.2) lib/unicorn.rb:571:in `process_client'
+    unicorn (0.95.2) lib/unicorn.rb:643:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:641:in `worker_loop'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `fork'
+    unicorn (0.95.2) lib/unicorn.rb:534:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `each'
+    unicorn (0.95.2) lib/unicorn.rb:530:in `spawn_missing_workers'
+    unicorn (0.95.2) lib/unicorn.rb:540:in `maintain_worker_count'
+    unicorn (0.95.2) lib/unicorn.rb:215:in `start'
+    unicorn (0.95.2) lib/unicorn.rb:28:in `run'
+    unicorn (0.95.2) bin/unicorn_rails:207
+    /usr/bin/unicorn_rails:19:in `load'
+    /usr/bin/unicorn_rails:19
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
